@@ -1,0 +1,36 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+}
+
+.hebergements{
+    display: flex;
+    flex: 2;
+    background-color: grey;
+    flex-direction: row;
+    /* align-items: flex-start; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    row-gap: 20px;
+
+    /* flex-basis: 33.333333% */
+}
+
+.hebergements2{
+    display: flex;
+    flex:1;
+    background-color: red;
+}
+
+img{
+    height:50px;
+}
+
+.card{
+    border: solid 1px black;
+    display: flex;
+    width: 30%;
+    /* justify-content: space-between; */
+}
