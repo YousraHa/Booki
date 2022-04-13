@@ -1,12 +1,15 @@
+/* MAIN */
+
 * {
   box-sizing: border-box;
-  /* padding: 5px;
-  margin: 5px; */
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  color: black;
 }
+
+/* NAVIGATION BAR */
 
 .booki{
   height: 50px;
@@ -40,6 +43,13 @@ ul{
   list-style-type: none;
 }
 
+a.hover:hover{
+  color:#0065FC;
+  border-top: solid #0065FC;
+}
+
+/* HEADER */
+
 .filtres{
   display: flex;
   justify-content: flex-start;
@@ -52,152 +62,9 @@ ul{
   border: 2px solid #F2F2F2;
 }
 
-.main{
-  display: flex;
-  /* flex-direction: row; */
-  column-gap: 20px;
-  /* align-content: space-around;*/
-  /* flex-direction: row;  */
-
-}
-
-/* .row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 2;
-}
-
-.double-column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 2;
-} */
-
-
-.hebergements{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 20px;
-  row-gap: 20px;
-  justify-content: space-around;
-  flex: 2;
-  background-color: #F2F2F2;
-  border-radius: 25px;
-
-  /* align-items: center;
-  align-content: space-around; */
-
-}
-
-.hebergement2{
-  display: flex;
-  /* flex-direction: column;
-  align-items: center;
-  align-content: space-around; */
-  background-color: #F2F2F2;
-  border-radius: 25px;
-  flex: 1;
-  /* flex-wrap: wrap; */
-  /* padding: 20px;
-  row-gap: 20px; */
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
-  background-color: white;
-  border-radius: 50px;
-  width: 30%;
-  /* height: 40%; */
-  display: block;
-  /* overflow: hidden; */
-
-}
-
-.card2 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
-  background-color: white;
-  border-radius: 15px;
-
-  width: 100%;
-  height: 30%;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* align-items: center; */
-}
-
-/* .card2 h4{
-  align-items: center;
-
-}
-
-.card2 p {
-  align-items: flex-end;
-  justify-content: flex-start;
-} */
-
-.cardImg2{
-  width : 40%;
-  height: 100%;
-  /* padding: 5px; */
-  /* object-position: 60% 50%; */
-  border-radius: 15px 0px 0px 15px;
-  /* object-position: bottom; */
-  display: flex;
-  padding: 5px;
-
-  /* flex-shrink: 0;
-  flex-basis: 40% */
-}
-
-.cardImg{
-  width : 100%;
-  height: 50%;
-  padding: 5px;
-  padding: 5px;
-  /* object-position: 60% 50%; */
-  border-radius: 50px 50px 0px 0px;
-  /* object-position: bottom; */
-  /* display: flex; */
-  object-fit: cover;
-
-  /* object-fit: cover;  */
-  /* object-position: -20% 0; */
-}
-
-/* .card img{
-  width : 100%;
-  padding: 5px;
-  object-position: bottom;
-  height: 50%;
-  width: 100%;
-  object-fit: contain;
-  background-size: 100% 100%; 
-} */
-
-/* .border{
-  border-radius: 50px;
-  border: 1px solid #F2F2F2;
-  padding: 20px;
-} */
-
-.filtres li>i{
-  color: #0065FC;
-  padding: 20px;
-  border-radius: 50px;
-  background-color: #DEEBFF;
-  /* height: 40px; */
+.filtres>li:hover{
+  color:#0065FC;
+  border: solid #0065FC;
 }
 
 .logements{
@@ -208,24 +75,12 @@ ul{
   border-radius: 50px;
 }
 
-.filtres>li:hover{
-  color:#0065FC;
-  border: solid #0065FC;
-}
-
-a.hover:hover{
-  color:#0065FC;
-  border-top: solid #0065FC;
-}
-
-.button{
-  border-radius: 0px 20px 20px 0px;
+.filtres li>i{
+  color: #0065FC;
+  padding: 20px;
+  border-radius: 50px;
   background-color: #DEEBFF;
-  position: absolute;
-  right:0px;
-  height: 100%;
 }
-
 
 input{
 	padding: 4px;
@@ -237,12 +92,6 @@ input{
   border:none;
 }
 
-.searchIcon{
-  padding: 20px;
-  border-radius:20px 0px 0px 20px;
-  background-color: #F2F2F2;
-}
-
 .rechercher{
   border-radius: 20px;
   border: 1px solid #F2F2F2;
@@ -252,51 +101,155 @@ input{
   position: relative;
 }
 
-/* .border{
-  border-radius: 50px;
-  border: 1px solid #F2F2F2;
+.button{
+  border-radius: 0px 20px 20px 0px;
+  background-color: #DEEBFF;
+  position: absolute;
+  right:0px;
+  height: 100%;
+}
+
+.searchIcon{
   padding: 20px;
-} */
+  border-radius:20px 0px 0px 20px;
+  background-color: #F2F2F2;
+}
 
-/* #container{
-  display: flex;
-} */
+/* MAIN PAGE */
 
-/* .column {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-} */
 
-/* .column2 {
+.main{
   display: flex;
-  flex-direction: row;
-  flex-basis: 70%;
-  flex: 3;
-  justify-content: space-evenly;
-  align-items: center;
-} */
+  column-gap: 20px;
+  justify-content: space-between;
+}
 
-.column3{
-  display: flex;
-  /* flex-direction: row; */
-  flex-basis: 70%;
-  /* flex: 3; */
-  justify-content: space-evenly;
-  align-items: center;
+/* HEBERGEMENTS A MARSEILLE */
+
+.hebergements{
+
+  background-color: #F2F2F2;
+  border-radius: 20px;
+
+  width: 60%;
 
 }
 
+.hebergement2 .box3{
+  flex-direction: column;
+}
 
+.blue{
+  color: #0065FC;
+}
 
-/* .row{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+.box3 a{
+  width: 30%;
+  margin-bottom: 50px;
+  text-decoration: none;
+  color: inherit;
+  /* color: black; */
+}
+
+/* .a article{
+  background-color: white;
+  padding: 1px;
+  border-radius: 25px;
+  display: block;
 } */
 
+figcaption{
+  margin: 20px;
+  text-decoration: none;
+}
+
+
+.box3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.ctn{
+  padding: 20px 20px 10px 20px;
+
+  box-sizing: content-box;
+  display: block;
+}
+
+.ctn2{
+  background-color: var(--grey);
+  padding: 20px 20px 10px 20px;
+  border-radius: 20px;
+  height: calc(100% - 120px);
+  box-sizing: content-box;
+}
+
+.boxpopulaire{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.a_populaire{
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+.a_populaire article{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 5px;
+  border-radius: 25px;
+
+}
+
+.hebergement2{
+  display: flex;
+   flex-direction: column;
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  width: 35%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 25px;
+  display: block;
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+
+  width: 100%;
+  height: 30%;
+  display: block;
+}
+
+.cardImg2{
+  width : 40%;
+  height: 100%;
+  border-radius: 25px 0px 0px 25px;
+  display: flex;
+  padding: 5px;
+}
+
+.cardImg{
+  width : 100%;
+  height: 50%;
+  padding: 5px;
+  padding: 5px;
+  border-radius: 25px 25px 0px 0px;
+  object-fit: cover;
+}
 
 
 /* Responsive columns - one column layout (vertical) on small screens */
