@@ -90,60 +90,90 @@ ul{
   padding: 20px;
   row-gap: 20px;
   justify-content: space-around;
-  /* align-items: flex-start; */
   flex: 2;
-  /* align-content: space-around; */
-  /* align-content: flex-start; */
-  /* margin: 20px; */
   background-color: #F2F2F2;
   border-radius: 25px;
-  /* flex-direction: row; */
 
-  /* flex-direction: row; */
+  /* align-items: center;
+  align-content: space-around; */
 
 }
 
 .hebergement2{
   display: flex;
-  /* flex-direction: column; */
-  /* align-items: center; */
+  /* flex-direction: column;
+  align-items: center;
+  align-content: space-around; */
   background-color: #F2F2F2;
   border-radius: 25px;
   flex: 1;
-  /* align-content: flex-start; */
-  /* margin: 20px; */
-  /* align-items: flex-start; */
-
-  
-  /* margin: 10px; */
+  /* flex-wrap: wrap; */
+  /* padding: 20px;
+  row-gap: 20px; */
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  /* margin: 20px; */
   text-align: center;
   background-color: white;
   border-radius: 50px;
-  overflow:hidden;
-  display: flex;
   width: 30%;
-
-  /* flex-direction: column; */
-  /* display: flex; */
-  /* display: block; */
-  /* width: 20%; */
-  /* order: 1; */
+  /* height: 40%; */
+  display: block;
   /* overflow: hidden; */
+
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+
+  width: 100%;
+  height: 30%;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+}
+
+/* .card2 h4{
+  align-items: center;
+
+}
+
+.card2 p {
+  align-items: flex-end;
+  justify-content: flex-start;
+} */
+
+.cardImg2{
+  width : 40%;
+  height: 100%;
+  /* padding: 5px; */
+  /* object-position: 60% 50%; */
+  border-radius: 15px 0px 0px 15px;
+  /* object-position: bottom; */
+  display: flex;
+  padding: 5px;
+
+  /* flex-shrink: 0;
+  flex-basis: 40% */
 }
 
 .cardImg{
   width : 100%;
+  height: 50%;
   padding: 5px;
-  object-position: 60% 50%;
-  /* height: -50%; */
-  /* margin-bottom: -50%; */
+  padding: 5px;
+  /* object-position: 60% 50%; */
   border-radius: 50px 50px 0px 0px;
-  object-position: bottom;
+  /* object-position: bottom; */
+  /* display: flex; */
+  object-fit: cover;
+
+  /* object-fit: cover;  */
+  /* object-position: -20% 0; */
 }
 
 /* .card img{
