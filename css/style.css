@@ -10,7 +10,7 @@ body {
   /* color: black; */
   text-decoration: none;
   list-style: none;
-  color: inherit;
+  /* color: inherit; */
 
 }
 
@@ -31,6 +31,8 @@ body {
 
 .navbar {
   display: flex;
+  color: inherit;
+
   /* flex-flow: row wrap;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -191,30 +193,13 @@ input{
   width: 60%;
 }
 
+.marseille span{
+
+}
+
 .blue{
   color: #0065FC;
 }
-
-/* .box3 a{
-  width: 30%;
-  margin-bottom: 50px;
-  text-decoration: none;
-  color: inherit;
-} */
-
-/* .a article{
-  background-color: white;
-  padding: 1px;
-  border-radius: 25px;
-  display: block;
-} */
-
-/* .a{
-  text-decoration: none;
-  color: inherit;
-  width: 30%;
-  margin-bottom: 50px;
-} */
 
 
 .card {
@@ -222,10 +207,9 @@ input{
   border-radius: 20px;
   display: block;
   box-shadow: 0 0 16px #0000002e;
-  /* margin-bottom: 50px; */
 }
 
-.card h4,p{
+.card h4, .card p{
   margin: 0px 5px 5px 10px;
 }
 
@@ -242,17 +226,23 @@ input{
 .figcaption{
   padding: 0px 0px 10px 10px;
   text-decoration: none;
+  position: relative;
+
 }
 
-.figcaption h4{
-  margin: 0px;
+.caption h4, .caption p{
+  margin: 10px;
+}
+
+.caption .card2div{
+  margin-left: 10px;
 }
 
 .box3{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  row-gap: 30px;
+  row-gap: 50px;
 }
 
 .box3 a{
@@ -280,6 +270,20 @@ input{
   position: relative;
 }
 
+.article_populaire article{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.article_populaire article:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+article:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+
+}
+
 .card2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -292,13 +296,14 @@ input{
 
 .card2div{
   position: absolute;
+  bottom: 0px;
 }
 
 .cardImg2{
   border-radius: 20px 0px 0px 20px;
-  width: 40%;
+  width: 32%;
   object-fit: cover;
-  height: 140px;
+  height: 155px;
 }
 
 
@@ -306,7 +311,7 @@ input{
   flex-direction: column;
 }
 
-.ctn2{
+.container2{
   background-color: #F2F2F2;
   padding: 20px;
   border-radius: 20px;
@@ -318,16 +323,17 @@ input{
   justify-content: space-between;
   flex-direction: column;
   row-gap: 10px;
+  align-content: center;
 }
 
-.a_populaire{
+.article_populaire{
   width: 100%;
   color: black;
   text-decoration: none;
   padding: 10px;
 }
 
-.a_populaire article{
+.article_populaire article{
   display: flex;
   flex-direction: row;
   background-color: white;
@@ -346,7 +352,7 @@ input{
 
 /* ACTIVITES */
 
-#activite {
+.activites {
   margin-bottom: 60px;
   ;
 }
@@ -391,7 +397,6 @@ input{
 /* FOOTER */
 footer {
   background-color: #F2F2F2;
-  /* margin: 0px -50px; */
   padding: 40px;
   display: flex;
 }
@@ -410,69 +415,6 @@ footer .column ul li a {
   text-decoration: none;
   line-height: 35px;
 }
-
-
-/* Responsive columns - one column layout (vertical) on small screens */
-/* @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-} */
-
-
-/* @media all and (max-width: 600px) {
-  .navbar {
-    flex-flow: column wrap;
-    padding: 0;
-  }
-  .navbar a { 
-    text-align: center; 
-    padding: 10px;
-  }
-  .navbar li:last-of-type a {
-    border-bottom: none;
-  }
-} */
-
-
-
-
-
-
-/* @media(max-width: 900px){
-  .filtres {
-    flex-wrap: wrap;
-}
-
-.marseille {
-    flex-direction: column;
-}
-
-.marseille,
-.marseille .populaire {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-#activite .activite-list {
-    flex-wrap: wrap;
-    height: auto;
-}
-
-#activite .activite-list .column {
-    width: 48%;
-}
-
-footer {
-    justify-content: space-between;
-}
-
-footer .column {
-    width: auto;
-}
-} */
 
 @media(max-width: 768px) {
 
@@ -546,5 +488,33 @@ footer {
 footer .column{
   width: auto;
 }
-
 }
+
+/* @media(max-width: 900px){
+  .filtres {
+    flex-wrap: wrap;
+}
+
+.marseille {
+    flex-direction: column;
+}
+
+.marseille,
+.marseille .populaire {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#activite .activite-list {
+    flex-wrap: wrap;
+    height: auto;
+}
+
+footer {
+    justify-content: space-between;
+}
+
+footer .column {
+    width: auto;
+}
+} */
