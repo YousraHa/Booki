@@ -24,7 +24,6 @@ body {
   padding: 1px;
 }
 
-
 .navbar {
   display: flex;
   color: inherit;
@@ -61,11 +60,11 @@ a.hover:hover{
   justify-content: flex-start;
 }
 
-.li_filtres{
+.p_filtres{
   font-weight: bold;
 }
 
-.filtres>li{
+.li_filtres{
   padding-right: 10px;
   margin-right: 20px;
   border-radius: 50px;
@@ -73,7 +72,7 @@ a.hover:hover{
   font-weight: bold;
 }
 
-.filtres>li:hover{
+.li_filtres:hover{
   color:#0065FC;
   border: solid #0065FC;
 }
@@ -86,7 +85,7 @@ a.hover:hover{
   border-radius: 50px;
 }
 
-.filtres li>i{
+.li_filtres>i{
   color: #0065FC;
   padding: 20px;
   border-radius: 50px;
@@ -128,14 +127,11 @@ input{
   width: 30%;
 }
 
-.button p{
-
+.button p, .button i{
+  text-align: center;
+  justify-content: center;
+  margin: 20px;
 }
-
-.button:after{
-  /* content:"<i class='fas fa-search'></i>" */
-}
-
 
 .searchIcon{
   padding: 20px;
@@ -144,7 +140,6 @@ input{
 }
 
 /* MAIN PAGE */
-
 
 .main{
   display: flex;
@@ -232,9 +227,10 @@ input{
   text-decoration: none;
   position: absolute;
   bottom: 55px;
+  margin-left: 25px;
 }
-/* LES PLUS POPULAIRE // hebergements2 */
 
+/* LES PLUS POPULAIRE // hebergements2 */
 
 .populaire{
   display: flex;
@@ -251,12 +247,10 @@ input{
 
 .article_populaire article:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-
 }
 
 article:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-
 }
 
 .card2 {
@@ -523,4 +517,7 @@ footer .column{
   display: block;
 }
 
+.button p{
+  display: none;
+}
 }
