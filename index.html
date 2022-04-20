@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="shortcut icon" href="./DW/images/logo/Booki@3x.png" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,8 +20,8 @@
         </div>
         <nav>
             <ul class="navbar">
-                <li><a href="#" class=" hover nav-links">Hébergements</a></li>
-                <li><a href="#" class=" hover nav-links">Activités</a></li>
+                <li><a href="#main1" class=" hover nav-links">Hébergements</a></li>
+                <li><a href="#activites1" class=" hover nav-links">Activités</a></li>
             </ul>
         </nav>
         </div>
@@ -33,13 +34,17 @@
                 <div class="rechercher">
                     <i class="fas fa-map-marker-alt searchIcon"></i>
                     <input value="Marseille, France" type="text">
-                    <span class="button">Rechercher</span>
+                    <div class="button">
+
+                        <p>Rechercher</p>
+                    </div>
+                    <i class="fas fa-search"></i>
                 </div>
             </div>
-            <p style="margin: 20px">
-                Filtres
-            </p>
                 <ul class="filtres">
+                    <p style="margin: 20px" class="li_filtres">
+                        Filtres
+                    </p>
                     <li>
                         <i class="fas fa-money-bill-wave"></i>
                         Economique
@@ -61,7 +66,7 @@
                 <i class="fas fa-info logements"></i> Plus de 500 logements sont disponibles dans cette ville
             </p>
         </header>
-        <div class="main">
+        <div class="main" id="main1">
             <section class="marseille">
                 <div class="ctn">
                     <h2>Hébergements à marseille</h2>
@@ -128,7 +133,7 @@
                             </a>
                         </div>
                     </div>
-                    <a href="#" style="text-decoration: none; color: black">Afficher plus</a>
+                    <a href="#" class="plus">Afficher plus</a>
                 </section>
                 <section class="populaire">
                     <div class="container2">
@@ -177,39 +182,51 @@
                 </div>
             </section>
         </div>
-        <section class="activites">
+        <section class="activites" id="activites1">
             <h2>Activités à Marseille</h2>
-            <div class="activite-list">
+            <div class="activites_container">
                 <div class="column">
                     <article>
-                        <img src="./DW/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-                        <h3>Vieux Port</h3>
+                        <a href="#">
+                            <img src="./DW/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                            <h3>Vieux Port</h3>
+                        </a>
                     </article>
                 </div>
                 <div class="column double">
                     <article>
-                        <img src="./DW/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-                        <h3>Fort de Pomègues</h3>
+                        <a href="#">
+                            <img src="./DW/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                            <h3>Fort de Pomègues</h3>
+                        </a>
                     </article>
                     <article>
-                        <img src="./DW/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
-                        <h3>Îles du Frioul</h3>
+                        <a href="#">
+                            <img src="./DW/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
+                            <h3>Îles du Frioul</h3>
+                        </a>
                     </article>
                 </div>
                 <div class="column">
                     <article>
-                        <img src="./DW/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-                        <h3>Parc National des Calanques</h3>
+                        <a href="#">
+                            <img src="./DW/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                            <h3>Parc National des Calanques</h3>
+                        </a>
                     </article>
                     </div>
                     <div class="column double">
                         <article>
-                            <img src="./DW/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-                            <h3>Notre-Dame-de-la-Garde</h3>
+                            <a href="#">
+                                <img src="./DW/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                                <h3>Notre-Dame-de-la-Garde</h3>
+                            </a>
                         </article>
                         <article>
-                            <img src="./DW/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc LongChamp">
-                            <h3>Parc LongChamp</h3>
+                            <a href="#">
+                                <img src="./DW/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc LongChamp">
+                                <h3>Parc LongChamp</h3>
+                            </a>
                         </article>
                     </div>
                 </div>
